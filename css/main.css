@@ -1,8 +1,14 @@
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;700&display=swap');
-*{margin: 0; padding: 0; box-sizing: border-box;}
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;700&display=swap");
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
-li{list-style: none;}
-a{
+li {
+    list-style: none;
+}
+a {
     text-decoration: none;
     display: inline-block;
     color: #222;
@@ -11,13 +17,11 @@ a{
 /* font-family: 'Lush'; */
 
 body {
-    font-family: 'Noto Sans KR', sans-serif;
+    font-family: "Noto Sans KR", sans-serif;
 }
 
-
-
 /* header */
-.header{
+.header {
     display: flex;
     height: 64px;
     padding: 0 18px;
@@ -78,12 +82,23 @@ body {
 }
 
 /* lnb */
-#lnb_chk {display: none;}
+#lnb_chk {
+    display: none;
+}
 #lnb_chk:checked ~ .lnb_ham_menu {
     left: 0;
 }
 
-#bath,#shower,#body_pro,#face,#hair,#makeup,#perfume,#gift {display: none;}
+#bath,
+#shower,
+#body_pro,
+#face,
+#hair,
+#makeup,
+#perfume,
+#gift {
+    display: none;
+}
 
 #bath:checked ~ .bath_inner .inner_list,
 #shower:checked ~ .shower_inner .inner_list,
@@ -92,7 +107,9 @@ body {
 #hair:checked ~ .hair_inner .inner_list,
 #makeup:checked ~ .makeup_inner .inner_list,
 #perfume:checked ~ .perfume_inner .inner_list,
-#gift:checked ~ .gift_inner .inner_list {display: block;}
+#gift:checked ~ .gift_inner .inner_list {
+    display: block;
+}
 
 #bath ~ .bath_inner .inner_list,
 #shower ~ .shower_inner .inner_list,
@@ -101,7 +118,9 @@ body {
 #hair ~ .hair_inner .inner_list,
 #makeup ~ .makeup_inner .inner_list,
 #perfume ~ .perfume_inner .inner_list,
-#gift ~ .gift_inner .inner_list {display: none;}
+#gift ~ .gift_inner .inner_list {
+    display: none;
+}
 
 .lnb_ham_menu .menu_wrap .close_lnb {
     position: absolute;
@@ -154,7 +173,7 @@ body {
     border-bottom: 1px solid #eee;
 }
 
-.mobile_sub_menu li{
+.mobile_sub_menu li {
     line-height: 34px;
     font-size: 14px;
 }
@@ -170,10 +189,9 @@ body {
     width: 100%;
 }
 
-
-
-.lnb_web_outer {display: none;}
-
+.lnb_web_outer {
+    display: none;
+}
 
 /* main_visual */
 .slick-slide img {
@@ -233,7 +251,7 @@ body {
 
 .main_visual .slider .slick-dots li button {
     font-size: 0;
-    width: 12px;   
+    width: 12px;
     height: 12px;
     border-radius: 50%;
     border: none;
@@ -244,4 +262,3 @@ body {
     background-color: #865dff;
     transform: scale(1.3);
 }
-
