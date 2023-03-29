@@ -1,0 +1,247 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;700&display=swap');
+*{margin: 0; padding: 0; box-sizing: border-box;}
+
+li{list-style: none;}
+a{
+    text-decoration: none;
+    display: inline-block;
+    color: #222;
+    height: 100%;
+}
+/* font-family: 'Lush'; */
+
+body {
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+
+
+/* header */
+.header{
+    display: flex;
+    height: 64px;
+    padding: 0 18px;
+    justify-content: space-between;
+}
+
+.header .left_lnb {
+    display: flex;
+}
+
+.header .left_lnb .logo a {
+    margin-left: 20px;
+}
+
+.header .gnb {
+    display: flex;
+    align-items: center;
+}
+
+.header .gnb ul {
+    display: flex;
+    width: 90px;
+    height: 24px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header .gnb ul li {
+    height: 24px;
+}
+
+.header .gnb ul li a img {
+    vertical-align: middle;
+}
+
+.header .gnb ul .cart {
+    position: relative;
+}
+
+.header .gnb ul .cart img {
+    width: 24px;
+    height: 24px;
+    vertical-align: middle;
+}
+
+.header .gnb ul .cart span {
+    position: absolute;
+    top: 0;
+    right: -3px;
+    font-size: 10px;
+    width: 15px;
+    height: 15px;
+    background-color: #865dff;
+    color: #fff;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 14px;
+}
+
+/* lnb */
+#lnb_chk {display: none;}
+#lnb_chk:checked ~ .lnb_ham_menu {
+    left: 0;
+}
+
+#bath,#shower,#body_pro,#face,#hair,#makeup,#perfume,#gift {display: none;}
+
+#bath:checked ~ .bath_inner .inner_list,
+#shower:checked ~ .shower_inner .inner_list,
+#body_pro:checked ~ .body_pro_inner .inner_list,
+#face:checked ~ .face_inner .inner_list,
+#hair:checked ~ .hair_inner .inner_list,
+#makeup:checked ~ .makeup_inner .inner_list,
+#perfume:checked ~ .perfume_inner .inner_list,
+#gift:checked ~ .gift_inner .inner_list {display: block;}
+
+#bath ~ .bath_inner .inner_list,
+#shower ~ .shower_inner .inner_list,
+#body_pro ~ .body_pro_inner .inner_list,
+#face ~ .face_inner .inner_list,
+#hair ~ .hair_inner .inner_list,
+#makeup ~ .makeup_inner .inner_list,
+#perfume ~ .perfume_inner .inner_list,
+#gift ~ .gift_inner .inner_list {display: none;}
+
+.lnb_ham_menu .menu_wrap .close_lnb {
+    position: absolute;
+    right: 25px;
+    top: 26px;
+    font-size: 20px;
+}
+
+.label label i {
+    font-size: 20px;
+    line-height: 64px;
+}
+
+.lnb_ham_menu {
+    position: absolute;
+    left: -220px;
+    width: 220px;
+    height: 100%;
+    background-color: #fff;
+    border-right: 1px solid #eee;
+    box-sizing: border-box;
+    z-index: 10;
+    transition: all 0.5s;
+}
+
+.menu_wrap {
+    padding: 0 30px;
+}
+
+.menu_wrap .tablet_logo {
+    height: 64px;
+    margin-bottom: 15px;
+}
+
+.mobile_menu li {
+    line-height: 40px;
+    font-weight: bold;
+}
+
+.mobile_menu .inner li a {
+    font-weight: normal;
+}
+
+.mobile_menu .inner .inner_list {
+    margin-left: 30px;
+}
+
+.mobile_sub_menu {
+    margin: 10px 0 20px;
+    border-bottom: 1px solid #eee;
+}
+
+.mobile_sub_menu li{
+    line-height: 34px;
+    font-size: 14px;
+}
+
+.mobile_sub_menu li:last-child {
+    margin-bottom: 15px;
+}
+
+.live_logo a {
+    width: 50px;
+}
+.live_logo a img {
+    width: 100%;
+}
+
+
+
+.lnb_web_outer {display: none;}
+
+
+/* main_visual */
+.slick-slide img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.slider a {
+    position: relative;
+}
+
+.slider a .main_title {
+    position: absolute;
+    top: 170px;
+    left: 30px;
+    transform: translateX(60px);
+    opacity: 0;
+}
+
+.slider a .main_title p {
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 45px;
+}
+
+.slider a .main_title.white {
+    color: #fff;
+}
+
+.slider a .main_title span {
+    font-size: 14px;
+}
+
+.main_visual .slick-list .slick-active .main_title {
+    transform: translateX(0);
+    opacity: 1;
+    transition: all 1s;
+}
+
+.main_visual .slider .slick-arrow {
+    font-size: 0;
+    visibility: hidden;
+    display: none !important;
+}
+
+.main_visual .slider .slick-dots {
+    position: absolute;
+    bottom: 25px;
+    left: 30px;
+}
+
+.main_visual .slider .slick-dots li {
+    display: inline-block;
+    padding: 0 5px;
+}
+
+.main_visual .slider .slick-dots li button {
+    font-size: 0;
+    width: 12px;   
+    height: 12px;
+    border-radius: 50%;
+    border: none;
+    background-color: #ccc;
+}
+
+.slider .slick-dots li.slick-active button {
+    background-color: #865dff;
+    transform: scale(1.3);
+}
+

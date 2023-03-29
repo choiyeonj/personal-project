@@ -1,0 +1,26 @@
+@font-face {
+    font-family: 'NotoSans';
+    src: url('NotoSansKR-Regular-Alphabetic.eot');
+    src: url('NotoSansKR-Regular-Alphabetic.eot?#iefix') format('embedded-opentype'),
+        url('NotoSansKR-Regular-Alphabetic.woff2') format('woff2'),
+        url('NotoSansKR-Regular-Alphabetic.woff') format('woff'),
+        url('NotoSansKR-Regular-Alphabetic.ttf') format('truetype'),
+        url('NotoSansKR-Regular-Alphabetic.svg#NotoSansKR-Regular-Alphabetic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Lush';
+    src: url('Lush-Regular.eot');
+    src: url('Lush-Regular.eot?#iefix') format('embedded-opentype'),
+        url('Lush-Regular.woff2') format('woff2'),
+        url('Lush-Regular.woff') format('woff'),
+        url('Lush-Regular.ttf') format('truetype'),
+        url('Lush-Regular.svg#Lush-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
