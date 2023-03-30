@@ -17,6 +17,8 @@ a {
 
 h2 {
     font-family: "Lush";
+    text-align: center;
+    margin: 50px 0 30px;
 }
 
 body {
@@ -330,6 +332,18 @@ body {
     border: 1px solid #eee;
 }
 
-.best ul li a img {
+.best ul li a span {
+    font-size: 14px;
+    color: #777;
+}
+
+.best ul li a .img_wrap img {
     width: 155px;
 }
+
+/* --------------new--------------- */
+.new .new_visual img {
+    width: 100%;
+}
+/* --------------best--------------- */
+/* --------------best--------------- */
