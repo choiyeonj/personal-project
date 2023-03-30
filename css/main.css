@@ -32,11 +32,11 @@ body {
     justify-content: space-between;
 }
 
-.header .left_lnb {
+.header .lnb {
     display: flex;
 }
 
-.header .left_lnb .logo a {
+.header .lnb .logo a {
     margin-left: 20px;
 }
 
