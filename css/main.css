@@ -16,7 +16,7 @@ a {
 }
 
 h2 {
-    font-family: 'Lush';
+    font-family: "Lush";
 }
 
 body {
@@ -267,7 +267,6 @@ body {
     transform: scale(1.3);
 }
 
-
 /* --------------best--------------- */
 
 .best {
@@ -276,7 +275,6 @@ body {
 
 .best .best_title {
     text-align: center;
-    margin-bottom: 30px;
 }
 
 .best ul {
@@ -284,12 +282,46 @@ body {
     overflow: auto;
     -webkit-overflow-scrolling: touch;
     text-align: center;
+    margin-left: 4px;
 }
 
 .best ul li {
+    position: relative;
     width: 180px;
-    
+    margin-bottom: 30px;
     margin-left: 15px;
+}
+
+.best ul li .lank {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+}
+
+.best ul li .lank img {
+    position: relative;
+    border-radius: 5px 5px 0 0;
+}
+
+.best ul li .lank p {
+    position: absolute;
+    top: 5px;
+    left: 6px;
+    color: #fff;
+    font-size: 13px;
+}
+
+.best ul li:last-child .lank p {
+    top: 5px;
+    left: 2px;
+}
+
+.best ul li a {
+    padding-top: 30px;
+}
+
+.best ul li a p.prod_tit {
+    padding-top: 15px;
 }
 
 .best ul li a .img_wrap {
@@ -300,5 +332,4 @@ body {
 
 .best ul li a img {
     width: 155px;
-    
 }
