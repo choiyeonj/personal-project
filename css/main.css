@@ -14,13 +14,17 @@ a {
     color: #222;
     height: 100%;
 }
-/* font-family: 'Lush'; */
+
+h2 {
+    font-family: 'Lush';
+}
 
 body {
     font-family: "Noto Sans KR", sans-serif;
+    height: 1500px;
 }
 
-/* header */
+/* --------------header--------------- */
 .header {
     display: flex;
     height: 64px;
@@ -81,7 +85,7 @@ body {
     line-height: 14px;
 }
 
-/* lnb */
+/* --------------lnb--------------- */
 #lnb_chk {
     display: none;
 }
@@ -193,7 +197,7 @@ body {
     display: none;
 }
 
-/* main_visual */
+/* --------------main_visual--------------- */
 .slick-slide img {
     display: block;
     width: 100%;
@@ -261,4 +265,40 @@ body {
 .slider .slick-dots li.slick-active button {
     background-color: #865dff;
     transform: scale(1.3);
+}
+
+
+/* --------------best--------------- */
+
+.best {
+    margin-top: 50px;
+}
+
+.best .best_title {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.best ul {
+    display: flex;
+    overflow: auto;
+    -webkit-overflow-scrolling: touch;
+    text-align: center;
+}
+
+.best ul li {
+    width: 180px;
+    
+    margin-left: 15px;
+}
+
+.best ul li a .img_wrap {
+    background-color: #fafafa;
+    border-radius: 20px;
+    border: 1px solid #eee;
+}
+
+.best ul li a img {
+    width: 155px;
+    
 }
