@@ -219,7 +219,7 @@
         <!-- lnb_web_outer -->
 
         <div class="main_visual">
-            <div class="slider">
+            <div class="slider slick-slider">
                 <a href="#!">
                     <img src="./image/main_visual(tablet)1.png" alt="main_visual01" />
                     <div class="main_title">
@@ -523,6 +523,23 @@
         </section>
         <!-- new -->
 
+        <div class="banner" data-aos="fade-up" data-aos-easing="ease-out-cubic" data-aos-duration="1000">
+            <div class="center slick-slider">
+                <div>
+                    <img src="./image/banner_tablet.png" alt="banner_tablet" />
+                    <p>젤러쉬 6기와 함께 #플라스틱줍깅 시즌2!</p>
+                </div>
+                <div>
+                    <img src="./image/banner_tablet2.jpg" alt="banner_tablet2" />
+                    <p>러쉬의 선한 영향력 보고서</p>
+                </div>
+                <div>
+                    <img src="./image/banner_tablet4.jpg" alt="banner_tablet3" />
+                    <p>러쉬코리아 개인정보처리방침 변경 안내</p>
+                </div>
+            </div>
+        </div>
+
         <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
         <script>
@@ -530,6 +547,35 @@
                 $('.slider').slick({
                     autoplay: true,
                     dots: true,
+                });
+                $('.center').slick({
+                    autoplay: true,
+                    dots: true,
+                    infinite: true,
+                    speed: 500,
+                    centerMode: true,
+                    centerPadding: '60px',
+                    slidesToShow: 3,
+                    responsive: [
+                        {
+                            breakpoint: 768,
+                            settings: {
+                                arrows: false,
+                                centerMode: true,
+                                centerPadding: '40px',
+                                slidesToShow: 3,
+                            },
+                        },
+                        {
+                            breakpoint: 480,
+                            settings: {
+                                arrows: false,
+                                centerMode: true,
+                                centerPadding: '40px',
+                                slidesToShow: 1,
+                            },
+                        },
+                    ],
                 });
             });
         </script>
