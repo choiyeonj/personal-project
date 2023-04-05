@@ -323,6 +323,10 @@ img {
     margin-left: 15px;
 }
 
+.best ul li:last-child {
+    margin-right: 15px;
+}
+
 .best ul li .lank {
     position: absolute;
     top: 15px;
@@ -482,17 +486,11 @@ img {
     left: 42%;
 }
 
-.banner .center .slick-active a {
-    width: 295px;
-    height: 187px;
-    overflow: hidden;
+/* --------------issue_content--------------- */
+.skincare {
+    height: 850px;
 }
 
-.banner .center .slick-active a img {
-    transform: scale(1.2);
-    transition: all 0.9s;
-}
-/* --------------issue_content--------------- */
 .issue_tit p {
     text-align: center;
     border-bottom: 1px solid #865dff6d;
@@ -501,17 +499,17 @@ img {
     margin-bottom: 15px;
 }
 
-.issue_content .youtube {
+.skincare .youtube {
     position: relative;
     margin: 0 15px;
 }
 
-.issue_content .youtube a img.youtube_link {
+.skincare .youtube a img.youtube_link {
     width: 100%;
     border: 3px solid #865dff;
 }
 
-.issue_content .youtube::before {
+.skincare .youtube::before {
     content: '';
     display: block;
     width: 100%;
@@ -523,7 +521,7 @@ img {
     z-index: 2;
 }
 
-.issue_content .youtube a i {
+.skincare .youtube a i {
     position: absolute;
     left: 50%;
     top: 50%;
@@ -533,7 +531,7 @@ img {
     z-index: 3;
 }
 
-.issue_content .issue_product {
+.skincare .issue_product {
     position: absolute;
     width: 100%;
 }
@@ -547,26 +545,74 @@ img {
 #skin_toner:checked ~ ul.toner,
 #facial_oil:checked ~ ul.oil,
 #moisturizer:checked ~ ul.moist {
-    top: 24px;
     opacity: 1;
+}
+
+#skin_toner:checked ~ label,
+#facial_oil:checked ~ label,
+#moisturizer:checked ~ label {
+    color: #865dff6d;
+}
+
+#skin_toner:checked ~ label::before,
+#facial_oil:checked ~ label::before,
+#moisturizer:checked ~ label::before {
+    width: 100%;
 }
 
 .issue_product .pro_menu {
     position: relative;
     display: flex;
     justify-content: space-around;
+    margin-top: 20px;
+}
+
+.pro_menu .skin label {
+    position: relative;
+}
+
+.pro_menu .skin label::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    margin: auto 0;
+    width: 0;
+    height: 1px;
+    background-color: #865dff6d;
+    -webkit-transition: all linear 0.3s;
+    transition: all linear 0.3s;
+}
+
+.issue_product p {
+    margin: 10px 0;
+    text-align: center;
+    font-size: 14px;
+}
+
+.issue_product p i {
+    font-size: 18px;
 }
 
 .issue_product .pro_menu .skin ul {
     position: absolute;
-    top: -450px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    top: 40px;
     left: 0;
     width: 100%;
-    height: 200px;
-    background-color: #ccc;
+    height: 450px;
+    background-color: #fff;
     opacity: 0;
     transition: all 0.3s;
     z-index: -5;
+}
+
+.pro_menu .skin .inner li {
+    font-size: 14px;
 }
 
 .pro_menu .skin .inner li a img {
