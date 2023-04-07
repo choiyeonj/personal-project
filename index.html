@@ -548,7 +548,7 @@
             </div>
             <div class="youtube" data-aos="fade-up" data-aos-easing="ease-out-cubic" data-aos-duration="1000">
                 <a href="https://www.youtube.com/watch?v=LlEIxdM87sY">
-                    <img class="youtube_link" src="./image/youtube.webp" alt="youtube_thumnail" />
+                    <img class="youtube_link" src="./image/youtube.png" alt="youtube_thumnail" />
                     <i class="fas fa-play"></i>
                 </a>
                 <div class="issue_product">
@@ -641,6 +641,56 @@
                 <h2>BATH ART</h2>
                 <p>러쉬의 배쓰 아트 연금술 칵테일 레시피!</p>
             </div>
+            <div class="issueSlider">
+                <div class="bath_wrap first">
+                    <div class="first_tit">
+                        <p>유니콘의 신비로운 발자취를 따라오세요. 상상력으로 환상의 세계를 열어드릴게요! 유니콘의 존재를 믿는 낭만적인 당신과 잘 어울려요.</p>
+                    </div>
+                    <div class="first_bath">
+                        <p>레시피 1. 환상적인 동화 속 세계</p>
+                        <div class="left_bath bath_img">
+                            <img src="./image/bath1.png" alt="bath1" />
+                            <img src="./image/bath1-1.jpg" alt="bath1-1" />
+                        </div>
+                        <div class="right_bath bath_img">
+                            <img src="./image/bath2.png" alt="bath2" />
+                            <img src="./image/bath2-1.jpg" alt="bath2-2" />
+                        </div>
+                    </div>
+                </div>
+                <div class="bath_wrap second">
+                    <div class="first_tit">
+                        <p>햇볕 가득 쏟아지는 황금연못에 여러분을 초대합니다 싱그러운 페퍼민트와 자몽, 빛의 소용돌이 속에서 안락함을 느껴보세요.</p>
+                    </div>
+                    <div class="second_bath">
+                        <p>레시피 2. 에메랄드 빛 우주여행</p>
+                        <div class="left_bath bath_img">
+                            <img src="./image/bath3.png" alt="bath3" />
+                            <img src="./image/bath3-1.jpg" alt="bath3-1" />
+                        </div>
+                        <div class="right_bath bath_img">
+                            <img src="./image/bath4.png" alt="bath4" />
+                            <img src="./image/bath4-1.jpg" alt="bath4-1" />
+                        </div>
+                    </div>
+                </div>
+                <div class="bath_wrap third">
+                    <div class="first_tit">
+                        <p>욕조에 피어오르는 꽃 한송이는 사랑을 이루어주고,로맨틱한 순간을 선사합니다. 바쁜 일상에서 잠시 벗어나 달콤함이 가득한 거품 입욕을 즐겨보세요</p>
+                    </div>
+                    <div class="third_bath">
+                        <p>레시피 3. 달콤한 핑크빛 로맨스</p>
+                        <div class="left_bath bath_img">
+                            <img src="./image/bath5.png" alt="bath5" />
+                            <img src="./image/bath5-1.jpg" alt="bath5-1" />
+                        </div>
+                        <div class="right_bath bath_img">
+                            <img src="./image/bath6.png" alt="bath6" />
+                            <img src="./image/bath6-1.jpg" alt="bath6-1" />
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
 
         <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
@@ -679,6 +729,14 @@
                             },
                         },
                     ],
+                });
+                $('.issueSlider').slick({
+                    autoplay: true,
+                    dots: true,
+                    infinite: true,
+                    speed: 500,
+                    fade: true,
+                    cssEase: 'linear',
                 });
             });
         </script>
