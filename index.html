@@ -353,9 +353,6 @@
                         >
                     </div>
                 </a>
-                <a href="#!">
-                    <img src="./image/main_visual(tablet)11.png" alt="main_visual11" />
-                </a>
             </div>
         </div>
         <!-- main_visual -->
@@ -523,7 +520,78 @@
                     <a href="#!">이스터 신제품 보러가기</a>
                 </div>
                 <div class="more_product">
-                    <input type="radio" name="new" id="" />
+                    <div class="autoplay">
+                        <div class="new_01">
+                            <a href="#!">
+                                <img src="./image/new1.png" alt="new1" />
+                                <p>골든 에그</p>
+                                <p class="price">₩ 17,000</p>
+                            </a>
+                        </div>
+                        <div class="new_02">
+                            <a href="#!">
+                                <img src="./image/new2.png" alt="new2" />
+                                <p>락스타 래빗</p>
+                                <p class="price">₩ 16,000</p>
+                            </a>
+                        </div>
+                        <div class="new_03">
+                            <a href="#!">
+                                <img src="./image/new3.png" alt="new3" />
+                                <p>팔로우 더 화이트 래빗</p>
+                                <p class="price">₩ 16,000</p>
+                            </a>
+                        </div>
+                        <div class="new_04">
+                            <a href="#!">
+                                <img src="./image/new4.png" alt="new4" />
+                                <p>오스타라</p>
+                                <p class="price">₩ 20,000</p>
+                            </a>
+                        </div>
+                        <div class="new_05">
+                            <a href="#!">
+                                <img src="./image/new5.png" alt="new5" />
+                                <p>골든 에그</p>
+                                <p class="price">₩ 17,000</p>
+                            </a>
+                        </div>
+                        <div class="new_06">
+                            <a href="#!">
+                                <img src="./image/new6.png" alt="new6" />
+                                <p>플라밍고 에그</p>
+                                <p class="price">₩ 17,000</p>
+                            </a>
+                        </div>
+                        <div class="new_07">
+                            <a href="#!">
+                                <img src="./image/new7.png" alt="new7" />
+                                <p>레인보우 앤드 워터폴즈</p>
+                                <p class="price">₩ 16,000</p>
+                            </a>
+                        </div>
+                        <div class="new_08">
+                            <a href="#!">
+                                <img src="./image/new8.png" alt="new8" />
+                                <p>베이비 레인보우 캐롯 레드</p>
+                                <p class="price">₩ 12,000</p>
+                            </a>
+                        </div>
+                        <div class="new_09">
+                            <a href="#!">
+                                <img src="./image/new9.png" alt="new9" />
+                                <p>베이비 레인보우 캐롯 옐로우</p>
+                                <p class="price">₩ 12,000</p>
+                            </a>
+                        </div>
+                        <div class="new_10">
+                            <a href="#!">
+                                <img src="./image/new10.png" alt="new10" />
+                                <p>어 베리 해피 러쉬 이스터</p>
+                                <p class="price">₩ 67,000</p>
+                            </a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
@@ -867,17 +935,17 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
         <script>
             $(document).ready(function () {
-                $(".slider").slick({
+                $('.slider').slick({
                     autoplay: true,
                     dots: true,
                 });
-                $(".center").slick({
+                $('.center').slick({
                     autoplay: true,
                     dots: true,
                     infinite: true,
                     speed: 600,
                     centerMode: true,
-                    centerPadding: "60px",
+                    centerPadding: '60px',
                     slidesToShow: 3,
                     responsive: [
                         {
@@ -885,7 +953,7 @@
                             settings: {
                                 arrows: false,
                                 centerMode: true,
-                                centerPadding: "40px",
+                                centerPadding: '40px',
                                 slidesToShow: 3,
                             },
                         },
@@ -894,19 +962,25 @@
                             settings: {
                                 arrows: false,
                                 centerMode: true,
-                                centerPadding: "40px",
+                                centerPadding: '40px',
                                 slidesToShow: 1,
                             },
                         },
                     ],
                 });
-                $(".issueSlider").slick({
+                $('.issueSlider').slick({
                     autoplay: true,
                     dots: true,
                     infinite: true,
                     speed: 500,
                     fade: true,
-                    cssEase: "linear",
+                    cssEase: 'linear',
+                });
+                $('.autoplay').slick({
+                    slidesToShow: 3,
+                    slidesToScroll: 1,
+                    //autoplay: true,
+                    autoplaySpeed: 2000,
                 });
             });
         </script>

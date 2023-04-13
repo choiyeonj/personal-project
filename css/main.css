@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;700&display=swap');
 * {
     margin: 0;
     padding: 0;
@@ -17,7 +17,7 @@ a {
 }
 
 h2 {
-    font-family: "Lush";
+    font-family: 'Lush';
     text-align: center;
     margin: 50px 0 30px;
     -webkit-background-clip: text;
@@ -27,7 +27,7 @@ h2 {
 }
 
 body {
-    font-family: "Noto Sans KR", sans-serif;
+    font-family: 'Noto Sans KR', sans-serif;
 }
 
 img {
@@ -378,6 +378,12 @@ img {
 /* --------------new--------------- */
 .new {
     position: relative;
+    overflow: hidden;
+    height: 750px;
+}
+
+.new .more_product {
+    display: none;
 }
 
 .new .new_visual .new_img {
@@ -404,6 +410,63 @@ img {
 
 .new .new_visual .a_wrap a {
     font-size: 14px;
+}
+
+.new .autoplay {
+    position: absolute;
+    bottom: 55px;
+    left: 200px;
+    width: 100%;
+}
+
+.new .autoplay > div img {
+    width: 200px;
+    background-color: #fafafab8;
+    border: 1px solid #eee;
+}
+
+.new .autoplay > div a {
+    width: 200px;
+}
+
+.new .autoplay > div a p {
+    margin-top: 5px;
+    text-align: center;
+}
+.autoplay .slick-arrow {
+    position: absolute;
+    top: 42%;
+    transform: translate(100%, -50%);
+    left: 0;
+    font-size: 0;
+    visibility: hidden;
+}
+
+.autoplay .slick-prev {
+    z-index: 2;
+    left: -50px;
+}
+
+.autoplay .slick-prev::before {
+    content: '\f053';
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    visibility: visible;
+    font-size: 30px;
+    color: #222;
+}
+
+.autoplay .slick-next {
+    right: 58%;
+}
+
+.autoplay .slick-next::before {
+    content: '\f054';
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    visibility: visible;
+    font-size: 30px;
+    color: #222;
 }
 
 /* --------------banner--------------- */
@@ -444,8 +507,8 @@ img {
 }
 
 .banner .center .slick-prev::before {
-    content: "\f053";
-    font-family: "Font Awesome 5 Free";
+    content: '\f053';
+    font-family: 'Font Awesome 5 Free';
     font-weight: 900;
     visibility: visible;
 }
@@ -455,8 +518,8 @@ img {
 }
 
 .banner .center .slick-next::before {
-    content: "\f054";
-    font-family: "Font Awesome 5 Free";
+    content: '\f054';
+    font-family: 'Font Awesome 5 Free';
     font-weight: 900;
     visibility: visible;
 }
@@ -511,7 +574,7 @@ img {
 }
 
 .skincare .youtube::before {
-    content: "";
+    content: '';
     display: block;
     width: 100%;
     height: 100%;
@@ -573,7 +636,7 @@ img {
 }
 
 .pro_menu .skin label::before {
-    content: "";
+    content: '';
     position: absolute;
     left: 0;
     bottom: 0;
@@ -654,7 +717,7 @@ img {
 }
 
 .bath_wrap::before {
-    content: "";
+    content: '';
     position: absolute;
     width: calc(100% - 30px);
     height: calc(100% - 30px);
@@ -712,8 +775,8 @@ img {
 }
 
 .bath .slick-prev::before {
-    content: "\f053";
-    font-family: "Font Awesome 5 Free";
+    content: '\f053';
+    font-family: 'Font Awesome 5 Free';
     font-weight: 900;
     visibility: visible;
     font-size: 40px;
@@ -725,8 +788,8 @@ img {
 }
 
 .bath .slick-next::before {
-    content: "\f054";
-    font-family: "Font Awesome 5 Free";
+    content: '\f054';
+    font-family: 'Font Awesome 5 Free';
     font-weight: 900;
     visibility: visible;
     font-size: 40px;
@@ -910,12 +973,16 @@ img {
 }
 
 /* --------------media_Query--------------- */
-@media all and (min-width: 601px) and (orientation: landscape) {
+@media all and (min-width: 601px) {
+    h2 {
+        margin-top: 72px;
+    }
+
     .main_visual {
-        padding-top: 0;
+        padding-top: 30px;
     }
     .main_visual .slider a {
-        height: 100vh;
+        height: 550px;
         overflow: hidden;
     }
 
@@ -937,7 +1004,51 @@ img {
         width: 100%;
     }
 
+    .new .new_visual .a_wrap {
+        display: none;
+    }
+
     .new .new_visual .new_img img {
         width: 600px;
+    }
+
+    .new .more_product {
+        display: block;
+    }
+
+    .banner {
+        margin-top: 100px;
+    }
+
+    .banner .slick-dots li.slick-active button {
+        display: none;
+    }
+
+    .bath .issue_tit p {
+        width: 200px;
+        font-size: 18px;
+    }
+
+    .issue_product > p {
+        font-size: 18px;
+        margin: 20px 0;
+    }
+
+    .issue_product .pro_menu {
+        justify-content: space-evenly;
+    }
+
+    .issue_product .pro_menu .skin ul {
+        height: 250px;
+        justify-content: space-evenly;
+        top: 20px;
+    }
+
+    .footer .slogan ul {
+        height: 70px;
+    }
+
+    .footer .slogan a img {
+        height: 60px;
     }
 }
