@@ -331,6 +331,7 @@ img {
     position: absolute;
     top: 15px;
     right: 20px;
+    z-index: 5;
 }
 
 .best ul li .lank img {
@@ -360,6 +361,7 @@ img {
 }
 
 .best ul li a .img_wrap {
+    position: relative;
     background-color: #fafafa;
     border-radius: 20px;
     border: 1px solid #eee;
@@ -379,7 +381,6 @@ img {
 .new {
     position: relative;
     overflow: hidden;
-    height: 750px;
 }
 
 .new .more_product {
@@ -397,8 +398,8 @@ img {
 
 .new .new_visual .a_wrap {
     position: absolute;
-    top: 77px;
-    left: 20px;
+    top: 125px;
+    left: 15px;
     width: 105px;
     height: 50px;
     padding: 5px 10px;
@@ -422,7 +423,7 @@ img {
 .new .autoplay > div img {
     width: 200px;
     background-color: #fafafab8;
-    border: 1px solid #eee;
+    box-shadow: 0px 10px 14px rgb(0 0 0 / 0.1);
 }
 
 .new .autoplay > div a {
@@ -1004,6 +1005,10 @@ img {
         width: 100%;
     }
 
+    .new {
+        height: 750px;
+    }
+
     .new .new_visual .a_wrap {
         display: none;
     }
@@ -1044,11 +1049,161 @@ img {
         top: 20px;
     }
 
+    .issue_product p {
+        font-size: 16px;
+    }
+
+    .bath .issueSlider .slick-dots {
+        left: 46%;
+    }
+
+    .bath .slick-next {
+        left: 94%;
+    }
+
+    .bath .slick-arrow {
+        top: 53%;
+    }
+
+    .bath .slick-prev {
+        left: 6%;
+    }
+
+    .bath_wrap > div .bath_img img {
+        width: 200px;
+    }
+
+    .bath_wrap > div .bath_img {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-around;
+        margin: 20px 0px 45px;
+        float: left;
+        width: 50%;
+    }
+
+    .left_bath li:first-child {
+        left: 85px;
+        top: 160px;
+    }
+
+    .right_bath li:first-child {
+        position: absolute;
+        top: 160px;
+    }
+
     .footer .slogan ul {
         height: 70px;
     }
 
     .footer .slogan a img {
         height: 60px;
+    }
+}
+
+@media all and (min-width: 769px) {
+    .main_visual .slider a {
+        height: 650px;
+    }
+
+    .best ul li a .img_wrap img:nth-child(2) {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        background-color: #fafafa;
+        border-radius: 20px;
+        opacity: 0;
+    }
+
+    .best ul li a .img_wrap:hover img:nth-child(2) {
+        opacity: 1;
+        transition: all 0.3s;
+    }
+
+    .best ul li a .img_wrap:hover {
+        box-shadow: none;
+        transition: all 0.3s;
+    }
+
+    .best .best_product ul::-webkit-scrollbar {
+        height: 10px;
+    }
+    .best .best_product ul::-webkit-scrollbar-track {
+        background-color: #fff;
+        border-radius: 100px;
+    }
+    .best .best_product ul::-webkit-scrollbar-thumb {
+        background-color: #d4aa70;
+        border-radius: 100px;
+    }
+    .best .best_product ul {
+        scrollbar-color: #d4aa70 #e4e4e4;
+    }
+    .best .best_product ul::-webkit-scrollbar-thumb {
+        background-image: linear-gradient(358deg, #0c0c21 6%, #3e3d91 50%, #e180c0 88%);
+        box-shadow: inset 2px 2px 5px 0 rgba(#fff, 0.5);
+        border-radius: 100px;
+    }
+
+    .new {
+        height: 800px;
+    }
+
+    .new .new_visual .new_img img {
+        width: 650px;
+    }
+
+    .new .autoplay {
+        bottom: 60px;
+    }
+
+    .new .more_product .autoplay .slick-list .slick-slide {
+        width: 250px !important;
+    }
+
+    .autoplay .slick-prev {
+        left: -55px;
+    }
+
+    .autoplay .slick-next {
+        right: 67%;
+    }
+
+    .autoplay .slick-arrow {
+        top: 115%;
+    }
+
+    .autoplay .slick-next {
+        right: 96%;
+    }
+
+    .new .autoplay > div img:hover {
+        box-shadow: none;
+        background: rgba(120, 120, 120, 0.3);
+        transition: all 0.3s;
+    }
+
+    .issue_tit p {
+        margin-bottom: 30px;
+    }
+
+    .skincare .youtube {
+        margin: 0 150px;
+    }
+
+    .bath_wrap > div .bath_img img {
+        width: 250px;
+    }
+
+    .left_bath li:first-child {
+        left: 0;
+    }
+    .right_bath li:first-child {
+        right: 0;
+    }
+
+    .footer {
+        margin-top: 80px;
     }
 }
