@@ -34,6 +34,10 @@ img {
     vertical-align: middle;
 }
 
+label {
+    cursor: pointer;
+}
+
 /* --------------header--------------- */
 .header {
     position: fixed;
@@ -298,6 +302,18 @@ header .left-menu nav {
 .mobile_menu li {
     line-height: 40px;
     font-weight: bold;
+}
+
+.mobile_menu .inner label {
+    cursor: pointer;
+}
+
+.mobile_menu .inner label:hover {
+    color: #865dff;
+}
+
+.mobile_menu .inner ul li:hover a {
+    color: #865dff;
 }
 
 .mobile_menu .inner li a {
