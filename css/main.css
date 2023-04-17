@@ -546,8 +546,8 @@ header .left-menu nav {
 
 .new .new_visual .a_wrap {
     position: absolute;
-    top: 77px;
-    left: 20px;
+    top: 5%;
+    left: 5%;
     width: 105px;
     height: 50px;
     padding: 5px 10px;
@@ -1277,11 +1277,339 @@ ul.bath_img li a .bath_img_cover p:first-child {
         top: 20px;
     }
 
+    .issue_product p {
+        font-size: 16px;
+    }
+
+    ul.bath_img li a .bath_img_cover {
+        display: none;
+    }
+
+    .bath .issueSlider .slick-dots {
+        left: 46%;
+    }
+
+    .bath .slick-next {
+        left: 94%;
+    }
+
+    .bath .slick-arrow {
+        top: 53%;
+    }
+
+    .bath .slick-prev {
+        left: 6%;
+    }
+
+    .bath_wrap > div .bath_img img {
+        width: 200px;
+    }
+
+    .bath_wrap > div .bath_img {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-around;
+        margin: 20px 0px 45px;
+        float: left;
+        width: 50%;
+    }
+
+    .left_bath li:first-child {
+        top: 160px;
+    }
+
+    .right_bath li:first-child {
+        position: absolute;
+        top: 160px;
+    }
+
     .footer .slogan ul {
         height: 70px;
     }
 
     .footer .slogan a img {
         height: 60px;
+    }
+}
+
+@media all and (min-width: 769px) {
+    .lnb_ham_menu .tablet_logo img:nth-child(1) {
+        display: block;
+    }
+    .lnb_ham_menu .tablet_logo img:nth-child(2) {
+        display: none;
+    }
+
+    .best .best_product ul::-webkit-scrollbar {
+        height: 10px;
+    }
+    .best .best_product ul::-webkit-scrollbar-track {
+        background-color: #fff;
+        border-radius: 100px;
+    }
+    .best .best_product ul::-webkit-scrollbar-thumb {
+        background-color: #d4aa70;
+        border-radius: 100px;
+    }
+    .best .best_product ul {
+        scrollbar-color: #d4aa70 #e4e4e4;
+    }
+    .best .best_product ul::-webkit-scrollbar-thumb {
+        background-image: linear-gradient(358deg, #0c0c21 6%, #3e3d91 50%, #e180c0 88%);
+        box-shadow: inset 2px 2px 5px 0 rgba(#fff, 0.5);
+        border-radius: 100px;
+    }
+
+    .new {
+        height: 800px;
+    }
+
+    .new .new_visual .new_img img {
+        width: 700px;
+    }
+
+    .new .autoplay {
+        bottom: -28%;
+    }
+
+    .new .more_product .autoplay .slick-list .slick-slide {
+        width: 250px !important;
+    }
+
+    .autoplay .slick-prev {
+        left: -55px;
+    }
+
+    .autoplay .slick-next {
+        right: 67%;
+    }
+
+    .autoplay .slick-arrow {
+        top: 115%;
+    }
+
+    .autoplay .slick-next {
+        right: 96%;
+    }
+
+    .new .autoplay > div img:hover {
+        box-shadow: none;
+        background: rgba(120, 120, 120, 0.3);
+        transition: all 0.3s;
+    }
+
+    .issue_tit p {
+        margin-bottom: 30px;
+    }
+
+    .skincare .youtube {
+        margin: 0 150px;
+    }
+
+    .bath_wrap > div .bath_img img {
+        width: 250px;
+    }
+
+    .footer {
+        margin-top: 80px;
+    }
+}
+
+@media all and (min-width: 1025px) {
+    .header_wrap {
+        height: 97px;
+        padding: 0 24px;
+    }
+
+    .header_wrap .left_menu {
+        height: 96px;
+    }
+
+    .lnb_ham_menu {
+        width: 30%;
+    }
+
+    .left_menu .mobile_ham_btn .open_lnb i {
+        font-size: 25px;
+        line-height: 96px;
+    }
+
+    .left_menu .mobile_ham_btn .close_lnb i {
+        font-size: 25px;
+        line-height: 65px;
+    }
+
+    .lnb_ham_menu .tablet_logo img:nth-child(1) {
+        display: none;
+    }
+    .lnb_ham_menu .tablet_logo img:nth-child(2) {
+        display: block;
+    }
+
+    .header_wrap .left_menu .logo a:nth-child(1) {
+        display: none;
+    }
+    .header_wrap .left_menu .logo a:nth-child(2) {
+        display: block;
+    }
+
+    .lnb_web_outer {
+        display: none;
+    }
+
+    .main_visual .slider a img:nth-child(1) {
+        display: none;
+    }
+    .main_visual .slider a img:nth-child(2) {
+        display: block;
+    }
+
+    .main_visual {
+        padding-top: 96px;
+    }
+
+    .main_visual .slider a .main_title {
+        top: 30%;
+    }
+
+    .main_visual .slider .slick-dots {
+        bottom: 5%;
+    }
+
+    .main_visual .slider .slick-dots li button {
+        cursor: pointer;
+    }
+
+    .main_visual .slider .slick-dots li button:hover {
+        transform: scale(1.2);
+        transition: all 0.3s;
+    }
+
+    .skincare {
+        margin-bottom: 100px;
+    }
+
+    .skincare .youtube {
+        margin: 0 200px;
+    }
+
+    .pro_menu .skin .inner li a img:hover {
+        transform: scale(1.2);
+        transition: all 0.3s;
+    }
+
+    ul.bath_img li a .bath_img_cover {
+        display: block;
+    }
+}
+
+@media all and (min-width: 1281px) {
+    .header_wrap {
+        width: 1269px;
+        margin: 0 auto;
+        padding: 0;
+    }
+
+    .lnb_web_outer {
+        display: block;
+    }
+
+    .left_menu .mobile_ham_btn {
+        display: none;
+    }
+
+    .main_visual {
+        width: 1269px;
+        margin: 0 auto;
+    }
+
+    .new {
+        width: 1269px;
+        margin: 0 auto;
+    }
+
+    .new .new_visual .new_img img {
+        width: 797px;
+    }
+
+    .new .autoplay {
+        bottom: -11%;
+    }
+
+    .skincare {
+        width: 1269px;
+        margin: 0 auto;
+        height: 1000px;
+    }
+
+    .skincare .youtube {
+        margin: 0 auto;
+        width: 50%;
+    }
+
+    .pro_menu .skin .inner li a img {
+        width: 200px;
+    }
+
+    .issue_product .pro_menu .skin ul {
+        top: 50px;
+    }
+
+    .issue_product .pro_menu {
+        margin-top: 50px;
+    }
+
+    .issue_content .bath {
+        width: 1269px;
+        margin: 0 auto;
+    }
+
+    .bath .issueSlider {
+        width: 1000px !important;
+        margin: 0 auto;
+    }
+
+    .footer {
+        display: block;
+        position: relative;
+        background: #000;
+        margin-top: 160px;
+    }
+
+    .footer .slogan {
+        width: 100%;
+        height: 140px;
+        background: #f2f2f2;
+        text-align: center;
+        padding: 15px 0;
+    }
+
+    .footer .slogan a img {
+        width: 136px;
+        height: 100%;
+    }
+
+    .footer .slogan ul {
+        max-width: 1269px;
+        margin: 0 auto;
+        height: 100%;
+    }
+
+    .footer .footer_wrap {
+        display: flex;
+        width: 1269px;
+        margin: 0 auto;
+        padding: 64px 0 64px 0;
+    }
+
+    footer .footer_left {
+        margin-right: 220px;
+    }
+
+    footer .footer_left .email_wrap {
+        display: block;
+        position: relative;
+        width: 392px;
+        margin-bottom: 0;
     }
 }
