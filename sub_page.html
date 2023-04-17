@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Sub_LUSH</title>
+
+        <script src="./js/jquery-3.6.4.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+
+        <!-- slick -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" />
+
+        <!-- css -->
+        <link rel="stylesheet" href="./css/sub_page.css" />
+
+        <!-- font -->
+        <link rel="stylesheet" href="./css/font/stylesheet.css" />
+
+        <!-- fontawesome -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css" />
+
+        <!-- aos -->
+        <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    </head>
+    <body>
+        <header class="header">
+            <div class="header_wrap">
+                <div class="left_menu">
+                    <div class="chk_box mobile_ham_btn">
+                        <input type="checkbox" id="lnb_chk" />
+                        <div class="label">
+                            <label for="lnb_chk" class="open_lnb"><i class="fas fa-bars"></i></label>
+                        </div>
+
+                        <nav class="lnb_ham_menu">
+                            <div class="menu_wrap">
+                                <div class="tablet_logo">
+                                    <img src="./image/logo_newyear (tablet).gif" alt="tablet_logo" />
+                                    <img src="./image/logo_newyear.gif" alt="tablet_logo" />
+                                </div>
+                                <div class="label">
+                                    <label for="lnb_chk" class="close_lnb"><i class="fas fa-times"></i></label>
+                                </div>
+
+                                <ul class="mobile_menu">
+                                    <input type="checkbox" id="bath" />
+                                    <li class="bath_inner inner">
+                                        <label for="bath" class="open">
+                                            <p>배쓰</p>
+                                        </label>
+                                        <ul class="inner_list">
+                                            <li><a href="#!">배쓰 밤</a></li>
+                                            <li><a href="#!">버블 바</a></li>
+                                            <li><a href="#!">배쓰 오일</a></li>
+                                            <li><a href="#!">펀</a></li>
+                                        </ul>
+                                    </li>
+                                    <!-- bath -->
+                                    <input type="checkbox" id="shower" />
+                                    <li class="shower_inner inner">
+                                        <label for="shower" class="open">
+                                            <p>샤워</p>
+                                        </label>
+                                        <ul class="inner_list">
+                                            <li><a href="#!">솝</a></li>
+                                            <li><a href="#!">샤워 젤&젤리</a></li>
+                                            <li><a href="#!">샤워 오일</a></li>
+                                            <li><a href="#!">보디 컨디셔너</a></li>
+                                            <li><a href="#!">샤워 밤</a></li>
+                                            <li><a href="#!">스크럽&버터</a></li>
+                                            <li><a href="#!">펀</a></li>
+                                        </ul>
+                                    </li>
+                                    <!-- shower -->
+                                    <input type="checkbox" id="body_pro" />
+                                    <li class="body_pro_inner inner">
+                                        <label for="body_pro" class="open">
+                                            <p>보디</p>
+                                        </label>
+                                        <ul class="inner_list">
+                                            <li><a href="#!">클렌저</a></li>
+                                            <li><a href="#!">로션</a></li>
+                                            <li><a href="#!">핸드 앤 풋</a></li>
+                                            <li><a href="#!">마사지 바</a></li>
+                                            <li><a href="#!">더스팅 파우더</a></li>
+                                            <li><a href="#!">쉐이빙 크림</a></li>
+                                        </ul>
+                                    </li>
+                                    <!-- body_pro -->
+                                    <input type="checkbox" id="face" />
+                                    <li class="face_inner inner">
+                                        <label for="face" class="open">
+                                            <p>페이스</p>
+                                        </label>
+                                        <ul class="inner_list">
+                                            <li><a href="#!">클렌저</a></li>
+                                            <li><a href="#!">페이스 마스크</a></li>
+                                            <li><a href="#!">토너</a></li>
+                                            <li><a href="#!">모이스춰라이저</a></li>
+                                            <li><a href="#!">립</a></li>
+                                            <li><a href="#!">쉐이빙 크림</a></li>
+                                        </ul>
+                                    </li>
+                                    <!-- face -->
+                                    <input type="checkbox" id="hair" />
+                                    <li class="hair_inner inner">
+                                        <label for="hair" class="open">
+                                            <p>헤어</p>
+                                        </label>
+                                        <ul class="inner_list">
+                                            <li><a href="#!">샴푸 바</a></li>
+                                            <li><a href="#!">샴푸</a></li>
+                                            <li><a href="#!">드라이 샴푸</a></li>
+                                            <li><a href="#!">컨디셔너</a></li>
+                                            <li><a href="#!">트리트먼트</a></li>
+                                            <li><a href="#!">스타일링</a></li>
+                                        </ul>
+                                    </li>
+                                    <!-- hair -->
+                                    <input type="checkbox" id="makeup" />
+                                    <li class="makeup_inner inner">
+                                        <label for="makeup" class="open">
+                                            <p>메이크업</p>
+                                        </label>
+                                        <ul class="inner_list">
+                                            <li><a href="#!">페이스 파우더</a></li>
+                                            <li><a href="#!">아이 메이크업</a></li>
+                                            <li><a href="#!">립</a></li>
+                                            <li><a href="#!">파운데이션</a></li>
+                                            <li><a href="#!">스킨 틴트</a></li>
+                                            <li><a href="#!">비건 브러쉬</a></li>
+                                        </ul>
+                                    </li>
+                                    <!-- makeup -->
+                                    <input type="checkbox" id="perfume" />
+                                    <li class="perfume_inner inner">
+                                        <label for="perfume" class="open">
+                                            <p>퍼퓸</p>
+                                        </label>
+                                        <ul class="inner_list">
+                                            <li><a href="#!">보디 스프레이</a></li>
+                                            <li><a href="#!">퍼퓸 라이브러리</a></li>
+                                            <li><a href="#!">코어 레인지</a></li>
+                                            <li><a href="#!">솔리드 퍼퓸</a></li>
+                                            <li><a href="#!">워시카드</a></li>
+                                            <li><a href="#!">퍼퓸 낫랩</a></li>
+                                        </ul>
+                                    </li>
+                                    <!-- perfume -->
+                                    <input type="checkbox" id="gift" />
+                                    <li class="gift_inner inner">
+                                        <label for="gift" class="open">
+                                            <p>기프트</p>
+                                        </label>
+                                        <ul class="inner_list">
+                                            <li><a href="#!">기프트 베스트</a></li>
+                                            <li><a href="#!">1-3만원대</a></li>
+                                            <li><a href="#!">4-6만원대</a></li>
+                                            <li><a href="#!">7만원 이상</a></li>
+                                            <li><a href="#!">낫랩</a></li>
+                                            <li><a href="#!">스웨그</a></li>
+                                            <li><a href="#!">악세서리</a></li>
+                                            <li><a href="#!">북</a></li>
+                                        </ul>
+                                    </li>
+                                    <!-- gift -->
+                                </ul>
+                                <!-- mobile_menu -->
+
+                                <ul class="mobile_sub_menu">
+                                    <li><a href="#!">로그인</a></li>
+                                    <li><a href="#!">회원가입</a></li>
+                                    <li><a href="#!">고객센터</a></li>
+                                    <li><a href="#!">선물함</a></li>
+                                </ul>
+                                <!-- mobile_sub_menu -->
+
+                                <div class="live_logo">
+                                    <a href="#!"><img src="./image/logo_live.png" alt="live_logo" /></a>
+                                </div>
+                            </div>
+                        </nav>
+                        <!-- lnb_ham_menu -->
+                    </div>
+
+                    <div class="logo">
+                        <a href="./index.html"><img src="./image/logo_newyear (tablet).gif" alt="tablet_logo" /></a>
+                        <a href="./index.html"><img src="./image/logo_newyear.gif" alt="tablet_logo" /></a>
+                    </div>
+
+                    <nav class="lnb_web_outer">
+                        <ul class="web_menu">
+                            <li>
+                                <a href="#!">제품</a>
+                                <div class="all_menu ver1">
+                                    <div class="menu_inner">
+                                        <ul>
+                                            <li>
+                                                <a href="#!" class="bold">추천상품</a>
+                                                <div class="inner_wrap">
+                                                    <ul class="inner_flex">
+                                                        <li>
+                                                            <ul>
+                                                                <li><a href="#!">베스트50</a></li>
+                                                                <li><a href="#!">국내제조</a></li>
+                                                                <li><a href="#!">네이키드</a></li>
+                                                            </ul>
+                                                        </li>
+                                                        <li>
+                                                            <ul>
+                                                                <li><a href="#!">배쓰밤</a></li>
+                                                                <li><a href="#!">버블바</a></li>
+                                                                <li><a href="#!">배쓰오일</a></li>
+                                                                <li><a href="#!">펀</a></li>
+                                                            </ul>
+                                                        </li>
+                                                        <li>
+                                                            <ul>
+                                                                <li><a href="#!">솝</a></li>
+                                                                <li><a href="#!">샤워젤</a></li>
+                                                                <li><a href="#!">샤워오일</a></li>
+                                                                <li><a href="#!">보디 컨디셔너</a></li>
+                                                                <li><a href="#!">샤워밤</a></li>
+                                                                <li><a href="#!">스크럽&버터</a></li>
+                                                                <li><a href="#!">펀</a></li>
+                                                            </ul>
+                                                        </li>
+                                                        <li>
+                                                            <ul>
+                                                                <li><a href="#!">클렌저</a></li>
+                                                                <li><a href="#!">로션</a></li>
+                                                                <li><a href="#!">핸드앤풋</a></li>
+                                                                <li><a href="#!">마사지바</a></li>
+                                                                <li><a href="#!">더스팅 파우더</a></li>
+                                                                <li><a href="#!">쉐이빙 크림</a></li>
+                                                            </ul>
+                                                        </li>
+                                                        <li>
+                                                            <ul>
+                                                                <li><a href="#!">클렌저</a></li>
+                                                                <li><a href="#!">페이스 마스크</a></li>
+                                                                <li><a href="#!">토너</a></li>
+                                                                <li><a href="#!">모이스춰라이저</a></li>
+                                                                <li><a href="#!">립</a></li>
+                                                                <li><a href="#!">쉐이빙 크림</a></li>
+                                                            </ul>
+                                                        </li>
+                                                        <li>
+                                                            <ul>
+                                                                <li><a href="#!">샴푸바</a></li>
+                                                                <li><a href="#!">샴푸</a></li>
+                                                                <li><a href="#!">드라이 샴푸</a></li>
+                                                                <li><a href="#!">컨디셔너</a></li>
+                                                                <li><a href="#!">트리트먼트</a></li>
+                                                                <li><a href="#!">스타일링</a></li>
+                                                            </ul>
+                                                        </li>
+                                                        <li>
+                                                            <ul>
+                                                                <li><a href="#!">페이스 파우더</a></li>
+                                                                <li><a href="#!">아이 메이크업</a></li>
+                                                                <li><a href="#!">립</a></li>
+                                                                <li><a href="#!">파운데이션</a></li>
+                                                                <li><a href="#!">스킨 틴트</a></li>
+                                                                <li><a href="#!">비건 브러쉬</a></li>
+                                                            </ul>
+                                                        </li>
+                                                        <li>
+                                                            <ul>
+                                                                <li><a href="#!">보디 스프레이</a></li>
+                                                                <li><a href="#!">퍼퓸 라이브러리</a></li>
+                                                                <li><a href="#!">코어레인지</a></li>
+                                                                <li><a href="#!">솔리드 퍼퓸</a></li>
+                                                                <li><a href="#!">워시카드</a></li>
+                                                                <li><a href="#!">퍼퓸 낫랩</a></li>
+                                                            </ul>
+                                                        </li>
+                                                        <li>
+                                                            <ul>
+                                                                <li><a href="#!">기프트 베스트</a></li>
+                                                                <li><a href="#!">1-3만원대</a></li>
+                                                                <li><a href="#!">4-6만원대</a></li>
+                                                                <li><a href="#!">7만원이상</a></li>
+                                                                <li><a href="#!">낫랩</a></li>
+                                                                <li><a href="#!">스웨그</a></li>
+                                                                <li><a href="#!">악세서리</a></li>
+                                                                <li><a href="#!">북</a></li>
+                                                            </ul>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </li>
+                                            <li><a href="#!" class="bold">배쓰</a></li>
+                                            <li><a href="#!" class="bold">샤워</a></li>
+                                            <li><a href="#!" class="bold">보디</a></li>
+                                            <li><a href="#!" class="bold">페이스</a></li>
+                                            <li><a href="#!" class="bold">헤어</a></li>
+                                            <li><a href="#!" class="bold">메이크업</a></li>
+                                            <li><a href="#!" class="bold">퍼퓸</a></li>
+                                            <li><a href="#!" class="bold">기프트</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="#!">러쉬소개</a>
+                                <div class="all_menu ver2">
+                                    <div class="menu_inner">
+                                        <ul>
+                                            <li>
+                                                <a href="#!" class="bold">러쉬소개</a>
+                                                <div class="inner_wrap">
+                                                    <ul class="inner_flex">
+                                                        <li>
+                                                            <ul>
+                                                                <li><a href="#!">러쉬역사</a></li>
+                                                                <li><a href="#!">이념과 가치</a></li>
+                                                                <li><a href="#!">브랜드 정책</a></li>
+                                                                <li><a href="#!">러쉬로운 기부와 나눔</a></li>
+                                                                <li><a href="#!">러쉬로운 자연순환</a></li>
+                                                            </ul>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <a href="#!" class="bold">러쉬 이야기</a>
+                                            </li>
+                                            <li>
+                                                <a href="#!" class="bold">채러티 팟</a>
+                                            </li>
+                                            <li>
+                                                <a href="#!" class="bold">서명캠페인</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </li>
+                            <li><a href="#!">매장안내</a></li>
+                            <li><a href="#!">스파</a></li>
+                            <li><a href="#!">이벤트</a></li>
+                            <li><a href="#!">커뮤니티</a></li>
+                        </ul>
+                    </nav>
+                    <!-- lnb_web_outer -->
+                </div>
+                <!-- left_menu -->
+
+                <div class="right_menu">
+                    <ul>
+                        <li>
+                            <a href="#!" class="search"><img src="https://www.lush.co.kr/content/renewal/mobile/images/ico/search.svg" alt="search" /></a>
+                        </li>
+                        <li>
+                            <a href="#!" class="cart">
+                                <img src="https://www.lush.co.kr/content/renewal/mobile/images/ico/bag.svg" alt="cart" />
+                                <span>0</span></a
+                            >
+                        </li>
+                        <li>
+                            <a href="#!" class="login"><img src="https://www.lush.co.kr/content/renewal/mobile/images/ico/account.svg" alt="login" /></a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- right_menu -->
+            </div>
+        </header>
+        <!-- header -->
+    </body>
+</html>

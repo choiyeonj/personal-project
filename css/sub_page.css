@@ -1,0 +1,330 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+li {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+    display: inline-block;
+    color: #222;
+    width: 100%;
+    height: 100%;
+}
+
+h2 {
+    font-family: 'Lush';
+    text-align: center;
+    margin: 50px 0 30px;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    background-image: linear-gradient(358deg, #0c0c21 6%, #3e3d91 50%, #e180c0 88%);
+}
+
+body {
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+img {
+    vertical-align: middle;
+}
+
+/* --------------header--------------- */
+.header {
+    position: fixed;
+    display: block;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+    background-color: #fff;
+    border-bottom: 1px solid #eee;
+}
+
+.header_wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    height: 65px;
+    margin: 0 auto;
+    padding: 0 18px;
+}
+
+.header_wrap .left_menu {
+    display: flex;
+}
+
+.header_wrap .left_menu .logo a:nth-child(2) {
+    display: none;
+}
+
+.header_wrap .left_menu .chk_box .open_lnb {
+    line-height: 64px;
+}
+
+.header_wrap .left_menu .logo a {
+    margin-left: 20px;
+}
+
+.header_wrap .right_menu {
+    display: flex;
+    align-items: center;
+}
+
+.header_wrap .right_menu ul {
+    display: flex;
+    width: 90px;
+    height: 24px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header_wrap .right_menu ul li {
+    height: 24px;
+}
+
+.header_wrap .right_menu ul li a img {
+    vertical-align: middle;
+}
+
+.header_wrap .right_menu ul .cart {
+    position: relative;
+}
+
+.header_wrap .right_menu ul .cart img {
+    width: 24px;
+    height: 24px;
+    vertical-align: middle;
+}
+
+.header_wrap .right_menu ul .cart span {
+    position: absolute;
+    top: 0;
+    right: -3px;
+    font-size: 10px;
+    width: 15px;
+    height: 15px;
+    background-color: #865dff;
+    color: #fff;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 14px;
+}
+
+header .left-menu nav {
+    display: inline-block;
+    height: 100%;
+}
+
+/*-------------------lnb_web_outer------------------*/
+.lnb_web_outer {
+    display: none;
+}
+
+.lnb_web_outer .web_menu {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.lnb_web_outer a:hover {
+    color: #865dff;
+}
+
+.lnb_web_outer > ul > li > a {
+    display: block;
+    height: 100%;
+    color: #222;
+    padding: 38px 23px;
+    font-weight: 400;
+    font-size: 16px;
+    letter-spacing: -0.028em;
+}
+
+.lnb_web_outer .all_menu {
+    position: absolute;
+    display: none;
+    left: 0;
+    top: 99%;
+    width: 100%;
+    background: #fff;
+    z-index: 10;
+    box-shadow: 0px 10px 14px rgba(0, 0, 0, 0.1);
+}
+
+.lnb_web_outer .web_menu li:hover .all_menu {
+    display: block;
+}
+
+.menu_inner {
+    display: block;
+    position: relative;
+    margin: 0 auto;
+    width: 1224px;
+    border-top: 1px solid #eee;
+    padding: 30px 0 24px 0;
+}
+
+.lnb_web_outer .all_menu .menu_inner > ul {
+    display: flex;
+    justify-content: left;
+    gap: 19px;
+}
+
+.lnb_web_outer .all_menu .menu_inner > ul > li {
+    width: 120px;
+    height: 300px;
+}
+
+.lnb_web_outer .all_menu .menu_inner .inner_wrap {
+    position: absolute;
+    top: 50px;
+    width: 1224px;
+    padding-top: 20px;
+}
+
+.lnb_web_outer .all_menu .menu_inner .inner_wrap .inner_flex {
+    display: flex;
+    justify-content: space-between;
+}
+
+.all_menu .menu_inner .inner_wrap .inner_flex li {
+    width: 120px;
+    line-height: 20px;
+    font-size: 14px;
+    padding: 6px 0;
+    letter-spacing: -0.35px;
+}
+
+.lnb_web_outer .all_menu.ver2 .menu_inner > ul {
+    display: flex;
+    justify-content: center;
+    gap: 35px;
+}
+
+.lnb_web_outer .all_menu ul li > a.bold {
+    display: block;
+    color: #222;
+    font-weight: 700;
+}
+
+/* --------------ham_menu--------------- */
+
+#lnb_chk {
+    display: none;
+}
+#lnb_chk:checked ~ .lnb_ham_menu {
+    left: 0;
+}
+
+#bath,
+#shower,
+#body_pro,
+#face,
+#hair,
+#makeup,
+#perfume,
+#gift {
+    display: none;
+}
+
+#bath:checked ~ .bath_inner .inner_list,
+#shower:checked ~ .shower_inner .inner_list,
+#body_pro:checked ~ .body_pro_inner .inner_list,
+#face:checked ~ .face_inner .inner_list,
+#hair:checked ~ .hair_inner .inner_list,
+#makeup:checked ~ .makeup_inner .inner_list,
+#perfume:checked ~ .perfume_inner .inner_list,
+#gift:checked ~ .gift_inner .inner_list {
+    display: block;
+}
+
+#bath ~ .bath_inner .inner_list,
+#shower ~ .shower_inner .inner_list,
+#body_pro ~ .body_pro_inner .inner_list,
+#face ~ .face_inner .inner_list,
+#hair ~ .hair_inner .inner_list,
+#makeup ~ .makeup_inner .inner_list,
+#perfume ~ .perfume_inner .inner_list,
+#gift ~ .gift_inner .inner_list {
+    display: none;
+}
+
+.lnb_ham_menu .menu_wrap .close_lnb {
+    position: absolute;
+    right: 25px;
+    top: 17px;
+    font-size: 20px;
+}
+
+.lnb_ham_menu {
+    display: block;
+    position: fixed;
+    left: -100vw;
+    top: 0;
+    max-width: 100vw;
+    height: 100%;
+    background-color: #fff;
+    border-right: 1px solid #eee;
+    box-sizing: border-box;
+    z-index: 100;
+    transition: all 0.5s;
+    overflow-y: auto;
+}
+
+.menu_wrap {
+    padding: 0 30px;
+    background-color: #fff;
+}
+
+.menu_wrap .tablet_logo {
+    height: 64px;
+    margin-bottom: 15px;
+}
+
+.lnb_ham_menu .tablet_logo img:nth-child(1) {
+    display: block;
+}
+.lnb_ham_menu .tablet_logo img:nth-child(2) {
+    display: none;
+}
+
+.mobile_menu li {
+    line-height: 40px;
+    font-weight: bold;
+}
+
+.mobile_menu .inner li a {
+    font-weight: normal;
+}
+
+.mobile_menu .inner .inner_list {
+    margin-left: 30px;
+}
+
+.mobile_sub_menu {
+    margin: 10px 0 20px;
+    border-bottom: 1px solid #eee;
+}
+
+.mobile_sub_menu li {
+    line-height: 34px;
+    font-size: 14px;
+}
+
+.mobile_sub_menu li:last-child {
+    margin-bottom: 15px;
+}
+
+.live_logo a {
+    width: 50px;
+}
+.live_logo a img {
+    width: 100%;
+}
