@@ -584,6 +584,38 @@ header .left-menu nav {
     transition: all 0.5s;
 }
 
+.pro_list .pagenation {
+    display: none;
+    margin: 100px auto;
+}
+
+.pro_list .pagenation ul {
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    position: relative;
+    width: 100%;
+}
+
+.pro_list .pagenation ul li {
+    display: block;
+    padding: 0 8px;
+}
+
+.pro_list .pagenation ul li a {
+    display: block;
+    height: 20px;
+    text-align: center;
+    color: #222;
+}
+
+.pro_list .pagenation ul li a.num {
+    font-size: 14px;
+    line-height: 19px;
+    border-bottom: 1px solid #fff;
+    text-decoration: none;
+}
+
 /* --------------footer--------------- */
 .footer {
     margin-top: 60px;
@@ -876,6 +908,10 @@ header .left-menu nav {
 
     .pro_list .more_btn_wrap {
         display: none;
+    }
+
+    .pro_list .pagenation {
+        display: block;
     }
 
     .footer {
