@@ -24,26 +24,65 @@
         <!-- aos -->
         <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
         <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+        <script>
+            $(function () {
+                const listMenu = $('.header .lnb_ham_menu');
+
+                $(document).ready(function () {
+                    $('.hamburger').click(function () {
+                        $(this).toggleClass('is-active');
+
+                        listMenu.stop().slideToggle(300);
+                    });
+                });
+                //top버튼
+                $(window).scroll(function () {
+                    if ($(this).scrollTop() > 250) {
+                        //250 넘으면 버튼이 보여짐니다.
+                        $('#topBtn').fadeIn();
+                    } else {
+                        $('#topBtn').fadeOut();
+                    }
+                }); // 버튼 클릭시
+                $('#topBtn').click(function () {
+                    $('html, body').animate(
+                        {
+                            scrollTop: 0,
+                        },
+                        400
+                    );
+                    return false;
+                });
+            });
+        </script>
     </head>
     <body>
         <header class="header">
             <div class="header_wrap">
                 <div class="left_menu">
                     <div class="chk_box mobile_ham_btn">
-                        <input type="checkbox" id="lnb_chk" />
+                        <div class="three col">
+                            <div class="hamburger" id="hamburger-1">
+                                <span class="line"></span>
+                                <span class="line"></span>
+                                <span class="line"></span>
+                            </div>
+                        </div>
+                        <!-- <input type="checkbox" id="lnb_chk" />
                         <div class="label">
                             <label for="lnb_chk" class="open_lnb"><i class="fas fa-bars"></i></label>
-                        </div>
+                        </div> -->
 
                         <nav class="lnb_ham_menu">
                             <div class="menu_wrap">
-                                <div class="tablet_logo">
+                                <!-- <div class="tablet_logo">
                                     <img src="./image/logo_newyear (tablet).gif" alt="tablet_logo" />
                                     <img src="./image/logo_newyear.gif" alt="tablet_logo" />
-                                </div>
-                                <div class="label">
+                                </div> -->
+                                <!-- <div class="label">
                                     <label for="lnb_chk" class="close_lnb"><i class="fas fa-times"></i></label>
-                                </div>
+                                </div> -->
 
                                 <ul class="mobile_menu">
                                     <input type="checkbox" id="bath" />
@@ -821,8 +860,9 @@
                 <!-- footer_right -->
             </div>
             <!-- footer_wrap -->
+
             <div class="quick_menu">
-                <a href="#top">
+                <a id="topBtn" href="#">
                     <img src="https://www.lush.co.kr/content/renewal/pc/images/ico/ico_footer_top.svg" alt="top" />
                 </a>
             </div>
