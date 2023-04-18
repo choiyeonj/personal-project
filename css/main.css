@@ -702,7 +702,7 @@ header .left-menu nav {
 
 /* --------------issue_content--------------- */
 .skincare {
-    height: 700px;
+    height: 800px;
     margin-bottom: 20px;
 }
 
@@ -913,6 +913,7 @@ ul.bath_img li a .bath_img_cover {
     border-radius: 20px;
     background: rgba(120, 120, 120, 0.3);
     opacity: 0;
+    display: none;
 }
 
 ul.bath_img:hover a .bath_img_cover {
