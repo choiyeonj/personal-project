@@ -1267,6 +1267,24 @@ ul.bath_img li a .bath_img_cover p:first-child {
     z-index: 4;
 }
 
+.back_dark {
+    position: fixed;
+    display: none;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(34, 34, 34, 0.4);
+    z-index: 12;
+}
+
+.back_dark.on {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
 #topBtn img {
     position: relative;
     display: inline-block;
