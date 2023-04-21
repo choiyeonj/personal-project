@@ -47,6 +47,7 @@ label {
     z-index: 100;
     background-color: #fff;
     border-bottom: 1px solid #eee;
+    z-index: 13;
 }
 
 .header_wrap {
@@ -179,6 +180,7 @@ header .left-menu nav {
     display: flex;
     justify-content: left;
     gap: 19px;
+    letter-spacing: -0.5;
 }
 
 .lnb_web_outer .all_menu .menu_inner > ul > li {
@@ -210,6 +212,22 @@ header .left-menu nav {
     display: flex;
     justify-content: center;
     gap: 35px;
+}
+
+.lnb_web_outer .all_menu.ver3 .menu_inner > ul {
+    display: flex;
+    justify-content: center;
+    gap: 0;
+    text-align: center;
+    height: 30px;
+}
+
+.lnb_web_outer .all_menu.ver3 .menu_inner > ul > li {
+    height: auto;
+}
+
+.lnb_web_outer .all_menu.ver3 ul li > a {
+    height: auto;
 }
 
 .lnb_web_outer .all_menu ul li > a.bold {
@@ -1275,7 +1293,6 @@ ul.bath_img li a .bath_img_cover p:first-child {
     width: 100vw;
     height: 100vh;
     background: rgba(34, 34, 34, 0.4);
-    z-index: 12;
 }
 
 .back_dark.on {
@@ -1283,6 +1300,7 @@ ul.bath_img li a .bath_img_cover p:first-child {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    z-index: 12;
 }
 
 #topBtn img {

@@ -380,7 +380,30 @@
                             <li><a href="#!">매장안내</a></li>
                             <li><a href="#!">스파</a></li>
                             <li><a href="#!">이벤트</a></li>
-                            <li><a href="#!">커뮤니티</a></li>
+                            <li>
+                                <a href="#!">커뮤니티</a>
+                                <div class="all_menu ver3">
+                                    <div class="menu_inner">
+                                        <ul>
+                                            <li>
+                                                <a href="#!" class="bold">취향사전</a>
+                                            </li>
+                                            <li>
+                                                <a href="#!" class="bold">젤러쉬</a>
+                                            </li>
+                                            <li>
+                                                <a href="#!" class="bold">덕찌</a>
+                                            </li>
+                                            <li>
+                                                <a href="#!" class="bold">다운로드 러쉬</a>
+                                            </li>
+                                            <li>
+                                                <a href="#!" class="bold">러쉬 타임즈</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </li>
                         </ul>
                     </nav>
                     <!-- lnb_web_outer -->
@@ -1151,20 +1174,19 @@
             </div>
         </footer>
         <!-- footer -->
-        <!-- <div class="back_dark">
+        <div class="back_dark">
             <script>
                 $(function () {
-                    $(window).on('load', function () {
-                        $('.header').css('z-index', 10);
-                        $('.back_dark').addClass('on');
-                    });
                     let menu = $('.lnb_web_outer');
                     menu.mouseover(function () {
-                        $('back_dark').css('display', 'block');
+                        $('.back_dark').addClass('on');
+                    });
+                    menu.mouseleave(function () {
+                        $('.back_dark').removeClass('on');
                     });
                 });
             </script>
-        </div> -->
+        </div>
 
         <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
@@ -1212,9 +1234,10 @@
                     cssEase: 'linear',
                 });
                 $('.autoplay').slick({
-                    slidesToShow: 3,
+                    infinite: true,
+                    slidesToShow: 5,
                     slidesToScroll: 1,
-                    autoplaySpeed: 2000,
+                    //autoplaySpeed: 2000,
                 });
             });
         </script>
