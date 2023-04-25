@@ -1551,6 +1551,10 @@ ul.bath_img li a .bath_img_cover p:first-child {
         height: 96px;
     }
 
+    .col {
+        margin: 34px 0px;
+    }
+
     .lnb_ham_menu {
         width: 30%;
     }
@@ -1599,7 +1603,7 @@ ul.bath_img li a .bath_img_cover p:first-child {
     }
 
     .main_visual .slider .slick-dots {
-        bottom: 5%;
+        bottom: 13%;
     }
 
     .main_visual .slider .slick-dots li button {
@@ -1647,6 +1651,10 @@ ul.bath_img li a .bath_img_cover p:first-child {
     .main_visual {
         width: 1269px;
         margin: 0 auto;
+    }
+
+    .main_visual .slider .slick-dots {
+        bottom: 5%;
     }
 
     .new {
