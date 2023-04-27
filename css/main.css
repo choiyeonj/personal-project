@@ -10,7 +10,7 @@ li {
 }
 a {
     text-decoration: none;
-    display: inline-block;
+    display: block;
     color: #222;
     width: 100%;
     height: 100%;
@@ -28,10 +28,6 @@ h2 {
 
 body {
     font-family: 'Noto Sans KR', sans-serif;
-}
-
-img {
-    vertical-align: middle;
 }
 
 label {
@@ -82,7 +78,7 @@ label {
     align-items: center;
 }
 
-.header_wrap .right_menu ul {
+.header_wrap .right_menu ul.gnb {
     display: flex;
     width: 90px;
     height: 24px;
@@ -90,12 +86,14 @@ label {
     align-items: center;
 }
 
-.header_wrap .right_menu ul li {
-    height: 24px;
+.header_wrap .right_menu ul.gnb > li {
+    display: inline-block;
+    height: 97px;
+    padding-top: 36px;
 }
 
-.header_wrap .right_menu ul li a img {
-    vertical-align: middle;
+.header_wrap .right_menu ul li.cart_icon {
+    padding-top: 34px;
 }
 
 .header_wrap .right_menu ul .cart {
@@ -105,7 +103,6 @@ label {
 .header_wrap .right_menu ul .cart img {
     width: 24px;
     height: 24px;
-    vertical-align: middle;
 }
 
 .header_wrap .right_menu ul .cart span {
@@ -120,6 +117,36 @@ label {
     border-radius: 50%;
     text-align: center;
     line-height: 14px;
+}
+
+.header_wrap .right_menu .login {
+    position: relative;
+}
+
+.header_wrap .right_menu .login .login_menu {
+    position: absolute;
+    width: 120px;
+    top: 97px;
+    left: 20px;
+    background: #fff;
+    z-index: 10;
+    box-shadow: 0px 10px 14px rgba(0, 0, 0, 0.1);
+    margin-left: -65px;
+    display: none;
+}
+
+.right_menu .login .login_menu ul {
+    padding: 20px 0 25px 33px;
+    border-top: 1px solid #eee;
+    font-size: 14px;
+}
+
+.right_menu .login .login_menu ul li a {
+    padding-top: 7px;
+}
+
+.right_menu .login .login_menu ul li a:hover {
+    color: #865dff;
 }
 
 header .left-menu nav {
@@ -212,6 +239,7 @@ header .left-menu nav {
     display: flex;
     justify-content: center;
     gap: 35px;
+    height: 230px;
 }
 
 .lnb_web_outer .all_menu.ver3 .menu_inner > ul {
@@ -435,7 +463,7 @@ header .left-menu nav {
 .slick-slide img {
     display: block;
     width: 100%;
-    height: auto;
+    height: 100%;
 }
 
 .main_visual .slider a img:nth-child(2) {
@@ -450,7 +478,7 @@ header .left-menu nav {
     position: absolute;
     top: 170px;
     left: 30px;
-    transform: translateX(60px);
+    transform: translateX(100px);
     opacity: 0;
 }
 
@@ -471,7 +499,7 @@ header .left-menu nav {
 .main_visual .slick-list .slick-active .main_title {
     transform: translateX(0);
     opacity: 1;
-    transition: all 1s;
+    transition: all 1.5s;
 }
 
 .main_visual .slider .slick-arrow {
@@ -515,6 +543,11 @@ header .left-menu nav {
     text-align: center;
 }
 
+.best .best_product {
+    width: 100%;
+    background-color: #eeeeeeb7;
+}
+
 .best ul {
     display: flex;
     overflow: auto;
@@ -527,10 +560,6 @@ header .left-menu nav {
     position: relative;
     margin-bottom: 30px;
     margin-left: 15px;
-}
-
-.best ul li:last-child {
-    margin-right: 15px;
 }
 
 .best ul li .lank {
@@ -548,9 +577,18 @@ header .left-menu nav {
 .best ul li .lank p {
     position: absolute;
     top: 5px;
-    left: 6px;
+    left: 7px;
     color: #fff;
     font-size: 13px;
+}
+
+.best ul li:nth-child(10) .lank p {
+    left: 3px;
+}
+
+.best ul li:nth-child(11) {
+    line-height: 200px;
+    font-size: 22px;
 }
 
 .best ul li:last-child .lank p {
@@ -564,14 +602,14 @@ header .left-menu nav {
 
 .best ul li a p.prod_tit {
     padding-top: 15px;
+    font-size: 14px;
 }
 
 .best ul li a .img_wrap {
     position: relative;
     background-color: #fafafa;
     border-radius: 20px;
-    border: 1px solid #eee;
-    box-shadow: 0px 10px 14px rgb(0 0 0 / 0.1);
+    box-shadow: 8px 8px 0px rgb(0 0 0 / 0.1);
 }
 
 .best ul li a span {
@@ -601,6 +639,7 @@ header .left-menu nav {
 .best ul li a .img_wrap:hover {
     box-shadow: none;
     transition: all 0.3s;
+    transform: translate(8px, 8px);
 }
 
 /* --------------new--------------- */
@@ -798,12 +837,13 @@ header .left-menu nav {
 
 .skincare .youtube {
     position: relative;
-    margin: 0 15px;
+    width: calc(100% - 15px);
+    margin: 0 auto;
 }
 
 .skincare .youtube a img.youtube_link {
+    display: block;
     width: 100%;
-    border: 3px solid #865dff;
 }
 
 .skincare .youtube::before {
@@ -823,7 +863,7 @@ header .left-menu nav {
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
-    color: #865dff;
+    color: #fff;
     font-size: 32px;
     z-index: 3;
 }
@@ -873,13 +913,13 @@ header .left-menu nav {
     content: '';
     position: absolute;
     left: 0;
-    bottom: 0;
+    bottom: -3px;
     margin: auto 0;
     width: 0;
     height: 1px;
     background-color: #865dff6d;
-    -webkit-transition: all linear 0.3s;
-    transition: all linear 0.3s;
+    -webkit-transition: all linear 0.5s;
+    transition: all linear 0.5s;
 }
 
 .issue_product p {
@@ -1083,6 +1123,10 @@ ul.bath_img li a .bath_img_cover p:first-child {
     font-size: 40px;
     color: #fff;
     cursor: pointer;
+}
+
+.fal {
+    font-weight: 300;
 }
 
 .bath .slick-dots li {
@@ -1333,11 +1377,15 @@ ul.bath_img li a .bath_img_cover p:first-child {
         display: none;
     }
 
+    .header_wrap .right_menu .login .login_menu {
+        display: none;
+    }
+
     .main_visual {
         padding-top: 65px;
     }
     .main_visual .slider a {
-        height: 550px;
+        height: 600px;
         overflow: hidden;
     }
 
@@ -1356,7 +1404,7 @@ ul.bath_img li a .bath_img_cover p:first-child {
     }
 
     .best ul li {
-        width: 100%;
+        width: 200px !important;
     }
 
     .new {
@@ -1384,7 +1432,11 @@ ul.bath_img li a .bath_img_cover p:first-child {
     }
 
     .skincare {
-        height: 850px;
+        height: 930px;
+    }
+
+    .skincare .youtube {
+        width: calc(100% - 300px);
     }
 
     .bath .issue_tit p {
@@ -1405,6 +1457,10 @@ ul.bath_img li a .bath_img_cover p:first-child {
         height: 250px;
         justify-content: space-evenly;
         top: 20px;
+    }
+
+    .pro_menu .skin .inner li {
+        width: 200px;
     }
 
     .issue_product p {
@@ -1528,10 +1584,6 @@ ul.bath_img li a .bath_img_cover p:first-child {
         margin-bottom: 30px;
     }
 
-    .skincare .youtube {
-        margin: 0 150px;
-    }
-
     .bath_wrap > div .bath_img img {
         width: 250px;
     }
@@ -1620,7 +1672,8 @@ ul.bath_img li a .bath_img_cover p:first-child {
     }
 
     .skincare .youtube {
-        margin: 0 200px;
+        width: calc(100% - 500px);
+        margin: 0 auto;
     }
 
     .pro_menu .skin .inner li a img:hover {
@@ -1648,6 +1701,10 @@ ul.bath_img li a .bath_img_cover p:first-child {
         display: none;
     }
 
+    .header_wrap .right_menu .login:hover .login_menu {
+        display: block;
+    }
+
     .main_visual {
         width: 1269px;
         margin: 0 auto;
@@ -1655,6 +1712,11 @@ ul.bath_img li a .bath_img_cover p:first-child {
 
     .main_visual .slider .slick-dots {
         bottom: 5%;
+    }
+
+    .best .best_product ul.responsive {
+        width: 1269px;
+        margin: 0 auto;
     }
 
     .new {
@@ -1677,8 +1739,6 @@ ul.bath_img li a .bath_img_cover p:first-child {
     }
 
     .skincare .youtube {
-        margin: 0 auto;
-        width: 50%;
     }
 
     .pro_menu .skin .inner li a img {
@@ -1691,6 +1751,10 @@ ul.bath_img li a .bath_img_cover p:first-child {
 
     .issue_product .pro_menu {
         margin-top: 50px;
+    }
+
+    .issue_product .pro_menu .skin ul {
+        height: 270px;
     }
 
     .issue_content .bath {
