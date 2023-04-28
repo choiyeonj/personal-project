@@ -380,7 +380,30 @@
                             <li><a href="#!">매장안내</a></li>
                             <li><a href="#!">스파</a></li>
                             <li><a href="#!">이벤트</a></li>
-                            <li><a href="#!">커뮤니티</a></li>
+                            <li>
+                                <a href="#!">커뮤니티</a>
+                                <div class="all_menu ver3">
+                                    <div class="menu_inner">
+                                        <ul>
+                                            <li>
+                                                <a href="#!" class="bold">취향사전</a>
+                                            </li>
+                                            <li>
+                                                <a href="#!" class="bold">젤러쉬</a>
+                                            </li>
+                                            <li>
+                                                <a href="#!" class="bold">덕찌</a>
+                                            </li>
+                                            <li>
+                                                <a href="#!" class="bold">다운로드 러쉬</a>
+                                            </li>
+                                            <li>
+                                                <a href="#!" class="bold">러쉬 타임즈</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </li>
                         </ul>
                     </nav>
                     <!-- lnb_web_outer -->
@@ -388,18 +411,24 @@
                 <!-- left_menu -->
 
                 <div class="right_menu">
-                    <ul>
+                    <ul class="gnb">
                         <li>
                             <a href="#!" class="search"><img src="https://www.lush.co.kr/content/renewal/mobile/images/ico/search.svg" alt="search" /></a>
                         </li>
-                        <li>
+                        <li class="cart_icon">
                             <a href="#!" class="cart">
                                 <img src="https://www.lush.co.kr/content/renewal/mobile/images/ico/bag.svg" alt="cart" />
                                 <span>0</span></a
                             >
                         </li>
-                        <li>
+                        <li class="login_icon">
                             <a href="#!" class="login"><img src="https://www.lush.co.kr/content/renewal/mobile/images/ico/account.svg" alt="login" /></a>
+                            <div class="login_menu">
+                                <ul>
+                                    <li><a href="#!">로그인</a></li>
+                                    <li><a href="#!">회원가입</a></li>
+                                </ul>
+                            </div>
                         </li>
                     </ul>
                 </div>
@@ -867,5 +896,27 @@
             </div>
         </footer>
         <!-- footer -->
+
+        <div class="back_dark">
+            <script>
+                $(function () {
+                    let menu = $('.lnb_web_outer');
+                    let login = $('.header .right_menu .login');
+
+                    menu.mouseover(function () {
+                        $('.back_dark').addClass('on');
+                    });
+                    menu.mouseleave(function () {
+                        $('.back_dark').removeClass('on');
+                    });
+                    login.mouseover(function () {
+                        $('.back_dark').addClass('on');
+                    });
+                    login.mouseleave(function () {
+                        $('.back_dark').removeClass('on');
+                    });
+                });
+            </script>
+        </div>
     </body>
 </html>

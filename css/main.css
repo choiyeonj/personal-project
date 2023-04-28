@@ -119,11 +119,11 @@ label {
     line-height: 14px;
 }
 
-.header_wrap .right_menu .login {
+.header_wrap .right_menu .login_icon {
     position: relative;
 }
 
-.header_wrap .right_menu .login .login_menu {
+.header_wrap .right_menu .login_icon .login_menu {
     position: absolute;
     width: 120px;
     top: 97px;
@@ -135,17 +135,17 @@ label {
     display: none;
 }
 
-.right_menu .login .login_menu ul {
+.right_menu .login_icon .login_menu ul {
     padding: 20px 0 25px 33px;
     border-top: 1px solid #eee;
     font-size: 14px;
 }
 
-.right_menu .login .login_menu ul li a {
+.right_menu .login_icon .login_menu ul li a {
     padding-top: 7px;
 }
 
-.right_menu .login .login_menu ul li a:hover {
+.right_menu .login_icon .login_menu ul li a:hover {
     color: #865dff;
 }
 
@@ -932,7 +932,7 @@ header .left-menu nav {
     font-size: 18px;
 }
 
-.issue_product .pro_menu .skin ul {
+.issue_product .pro_menu .skin ul.inner {
     position: absolute;
     display: flex;
     flex-wrap: wrap;
@@ -954,11 +954,46 @@ header .left-menu nav {
 }
 
 .pro_menu .skin .inner li {
+    position: relative;
     font-size: 14px;
 }
 
 .pro_menu .skin .inner li a img {
     width: 150px;
+}
+
+.pro_menu .skin .inner .material_wrap {
+    position: absolute;
+    top: 268px;
+    left: -44px;
+    display: flex;
+    opacity: 0;
+}
+
+.pro_menu .skin .inner .material_wrap li {
+    width: 100px;
+    display: none;
+}
+
+.pro_menu .skin .inner .list_four {
+    left: -100px;
+}
+
+.pro_menu .skin .inner > li:hover .material_wrap {
+    opacity: 1;
+    transition: all 0.5s;
+}
+
+.pro_menu .skin .inner .material_wrap > div {
+    position: absolute;
+}
+
+.pro_menu .skin .inner .material_wrap p {
+    font-size: 12px;
+}
+
+.pro_menu .skin .inner .material_wrap img {
+    width: 100px;
 }
 
 /* --------------issue_content--------------- */
@@ -1453,13 +1488,13 @@ ul.bath_img li a .bath_img_cover p:first-child {
         justify-content: space-evenly;
     }
 
-    .issue_product .pro_menu .skin ul {
+    .issue_product .pro_menu .skin ul.inner {
         height: 250px;
         justify-content: space-evenly;
         top: 20px;
     }
 
-    .pro_menu .skin .inner li {
+    .pro_menu .skin .inner > li {
         width: 200px;
     }
 
@@ -1701,7 +1736,7 @@ ul.bath_img li a .bath_img_cover p:first-child {
         display: none;
     }
 
-    .header_wrap .right_menu .login:hover .login_menu {
+    .header_wrap .right_menu .login_icon:hover .login_menu {
         display: block;
     }
 
@@ -1735,17 +1770,14 @@ ul.bath_img li a .bath_img_cover p:first-child {
     .skincare {
         width: 1269px;
         margin: 0 auto;
-        height: 1000px;
-    }
-
-    .skincare .youtube {
+        height: 1100px;
     }
 
     .pro_menu .skin .inner li a img {
         width: 200px;
     }
 
-    .issue_product .pro_menu .skin ul {
+    .issue_product .pro_menu .skin ul.inner {
         top: 50px;
     }
 
@@ -1753,8 +1785,12 @@ ul.bath_img li a .bath_img_cover p:first-child {
         margin-top: 50px;
     }
 
-    .issue_product .pro_menu .skin ul {
+    .issue_product .pro_menu .skin ul.inner {
         height: 270px;
+    }
+
+    .pro_menu .skin .inner .material_wrap li {
+        display: block;
     }
 
     .issue_content .bath {
