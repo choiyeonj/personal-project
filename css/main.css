@@ -631,17 +631,6 @@ header .left-menu nav {
     opacity: 0;
 }
 
-.best ul li a .img_wrap:hover img:nth-child(2) {
-    opacity: 1;
-    transition: all 0.3s;
-}
-
-.best ul li a .img_wrap:hover {
-    box-shadow: none;
-    transition: all 0.3s;
-    transform: translate(8px, 8px);
-}
-
 /* --------------new--------------- */
 .new {
     position: relative;
@@ -1752,6 +1741,17 @@ ul.bath_img li a .bath_img_cover p:first-child {
     .best .best_product ul.responsive {
         width: 1269px;
         margin: 0 auto;
+    }
+
+    .best ul li a .img_wrap:hover img:nth-child(2) {
+        opacity: 1;
+        transition: all 0.3s;
+    }
+
+    .best ul li a .img_wrap:hover {
+        box-shadow: none;
+        transition: all 0.3s;
+        transform: translate(8px, 8px);
     }
 
     .new {
